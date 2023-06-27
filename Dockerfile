@@ -24,11 +24,12 @@ RUN apt-get update && \
     python3-pip && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Install PyTorch
 RUN pip3 install \
     numpy \
     scipy \ 
+    scikit-learn \
     pandas \
-    matplotlib
+    matplotlib \ 
+    seaborn
 
 WORKDIR /src
