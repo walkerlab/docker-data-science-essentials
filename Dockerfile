@@ -32,7 +32,7 @@ RUN pip3 install \
     pandas \
     matplotlib \ 
     seaborn \
-    jax \ 
+    "jax[cpu]" \ 
     numpyro \
     pymc
 
